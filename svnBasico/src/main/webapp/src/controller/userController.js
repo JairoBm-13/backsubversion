@@ -24,14 +24,15 @@ App.Controller.UserController = Backbone.View.extend({
         },
         save:function() { 
             var model = $('#userForm').serializeObject();
-            var long = (Math.randon()*100)+1;
+            var long = (Math.random()*100)+1;
             long = Math.round(long);
             var text;
             for (i = 0; i < long ; i++){
-                var carac = Math.randon()*255;
+                var carac = Math.random()*255;
                 text += carac + "";
             }
-            document.getElementById('msj').innerHTML =  "<div class=\"alert alert-success\"> <a href=\"#\" class=\"close\" data-dismiss=\"alert\">&times</a>El usuario "+ model.firstName + " " +model.lastName+ " nació el día "+ model.birthDate+text+"</div>";
+            alert(text);
+            document.getElementById('msj').innerHTML =  "<div class=\"alert alert-success\"> <a href=\"#\" class=\"close\" data-dismiss=\"alert\">&times</a>El usuario "+ model.firstName + " " +model.lastName+ " nació el día "+ model.birthDate+"</div>";
         },
         cancel: function(){
             alert('Cancel');
