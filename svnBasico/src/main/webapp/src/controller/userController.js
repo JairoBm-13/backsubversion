@@ -31,7 +31,7 @@ App.Controller.UserController = Backbone.View.extend({
                 var carac = Math.randon()*255;
                 text += carac + "";
             }
-            document.getElementById('msj').innerHTML =  "<div class=\"alert alert-success\"> <a href=\"#\" class=\"close\" data-dismiss=\"alert\">&times</a>El usuario "+ model.firstName + " " +model.lastName+ " nació el "+ model.birthDate+text+"</div>";
+            document.getElementById('msj').innerHTML =  "<div class=\"alert alert-success\"> <a href=\"#\" class=\"close\" data-dismiss=\"alert\">&times</a>El usuario "+ model.firstName + " " +model.lastName+ " nació el día "+ model.birthDate+text+"</div>";
         },
         cancel: function(){
             alert('Cancel');
