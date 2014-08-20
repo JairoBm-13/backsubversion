@@ -10,7 +10,7 @@
             'birthDate' : ''
         },
         initialize: function() {
- 
+            alert('hola');
         }
     });
 

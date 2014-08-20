@@ -26,6 +26,12 @@ and open the template in the editor.
                 <%= '</scr'+'ipt>' %>
             </div>
  
+            <div class='form-group' >
+                <label for='coso'>coso</label>
+                <input type='text' class='form-control' id='coso' name='coso' placeholder='Enter value' value='<%= user.get('coso') %>'/>
+            </div>
+ 
+ 
             <a onclick="Backbone.trigger('user-save'); return false" >Guardar</a> |
             <a onclick="Backbone.trigger('user-cancel'); return false" >Cancelar</a> |
         </form>
